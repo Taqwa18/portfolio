@@ -1,0 +1,117 @@
+<!-- Metadata & Preload Resources -->
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="//s3.envato.com">
+    <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/logos.png" as="image">
+    <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/common.png" as="image">
+    
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Nino - Modern Portfolio Template Preview - ThemeForest</title>
+    <meta name="description" content="Nino - Personal Portfolio HTML Template fresh and clean Design.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="turbo-visit-control" content="reload">
+</head>
+
+<!-- Google Tag Manager (GTM) & Analytics -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W8KL5Q5"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i) {
+      w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8KL5Q5');
+</script>
+
+<!-- Icons for Mobile & Desktop -->
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="path-to-icon.png" sizes="72x72">
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="path-to-icon.png" sizes="114x114">
+
+<!-- Full-Screen Preview Frame -->
+<iframe class="full-screen-preview__frame" src="https://wordpressboss.com/thememaster/nino-demo/" name="preview-frame" frameborder="0" style="height: 531px;">
+</iframe>
+
+<!-- Affiliate Tracker -->
+<div id="affiliate-tracker" class="is-hidden" data-view="affiliatesTracker" data-cookiebot-enabled="true"></div>
+
+<!-- Cookie Consent Management -->
+<script src="https://consent.cookiebot.com/uc.js" data-cbid="d10f7659-aa82-4007-9cf1-54a9496002bf" async></script>
+
+<script>
+  window.addEventListener('CookiebotOnAccept', handleCookiebotAcceptDeclineEvent, false);
+  window.addEventListener('CookiebotOnDecline', handleCookiebotAcceptDeclineEvent, false);
+
+  function handleCookiebotAcceptDeclineEvent() {
+    if (Cookiebot.consent.statistics) {
+      setupGoogleAnalytics();
+    } else {
+      unloadGoogleAnalytics();
+    }
+  }
+</script>
+
+<!-- Google Analytics Setup & Management -->
+<script>
+  function setupGoogleAnalytics() {
+    var accountId = "UA-11834194-7";
+    ga("create", accountId, { "name": "m", "allowLinker": true });
+    // More GA setup code
+  }
+
+  function loadGoogleAnalytics() {
+    var s=document.createElement('script');
+    s.type='text/javascript';
+    s.async=true;
+    s.src='https://www.google-analytics.com/analytics.js';
+    var x=document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s,x);
+  }
+
+  setupGoogleAnalytics();
+  loadGoogleAnalytics();
+</script>
+
+<!-- Trim Google Analytics Cookies -->
+<script>
+  function trimGaSessionCookies() {
+    let maxCookies = 15;
+    var gaCookies = [];
+    let cookies = document.cookie.split('; ');
+    for (let i in cookies) {
+      let [cookieName, cookieVal] = cookies[i].split('=', 2);
+      if (cookieName.startsWith('_ga_')) {
+        gaCookies.push([cookieName, cookieVal]);
+      }
+    }
+    if (gaCookies.length > maxCookies) {
+      gaCookies.sort((a, b) => (a[1] > b[1] ? -1 : 1));
+      for (let i in gaCookies) {
+        if (i >= maxCookies) $.removeCookie(gaCookies[i][0], { path: '/', domain: window.location.host });
+      }
+    }
+  }
+
+  trimGaSessionCookies();
+</script>
+
+<!-- Fallback for NoScript -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8KL5Q5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+ <!-- CSS Stylesheets -->
+<link rel="stylesheet" media="all" href="https://public-assets.envato-static.com/assets/market/core/index.css">
+<link rel="stylesheet" media="all" href="https://public-assets.envato-static.com/assets/market/pages/preview/index.css">
+<style>
+    .full-screen-preview__frame {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+
+    .is-hidden {
+        display: none;
+    }
+</style>
